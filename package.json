@@ -1,0 +1,72 @@
+{
+  "name": "encrypt-file-ts",
+  "version": "0.9.0",
+  "description": "🔒 Encrypt the file, Support Electron and Browser.",
+  "scripts": {
+    "test": "jest --env=node --colors && jest-coverage-badges --output './badges'",
+    "build": "tsc",
+    "export": "tsc && webpack",
+    "lint": "prettier --write ./src/**/*.{ts,js}",
+    "release": "release-it"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "electron",
+    "typescript",
+    "browser",
+    "aes",
+    "file",
+    "secrets",
+    "archive",
+    "aes-256",
+    "rabbit",
+    "encrypt",
+    "decrypt"
+  ],
+  "author": "hmmhmmhm",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/crypto-js": "^4.0.2",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^15.12.4",
+    "@types/node-forge": "^0.10.10",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "jest": "27.0.1",
+    "jest-coverage-badges": "^1.1.2",
+    "prettier": "^2.3.1",
+    "release-it": "^14.11.6",
+    "terser-webpack-plugin": "^4.0.0",
+    "ts-jest": "27.0.1",
+    "typescript": "^4.4.3",
+    "webpack": "^4.44.1",
+    "webpack-bundle-analyzer": "^4.4.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "node-forge": "^0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmmhmmhm/encrypt-file-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hmmhmmhm/encrypt-file-ts/issues"
+  }
+}

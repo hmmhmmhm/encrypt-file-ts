@@ -1,6 +1,6 @@
 {
   "name": "encrypt-file-ts",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "🔒 Encrypt the file, Support Electron and Browser.",
   "scripts": {
     "test": "jest --env=node --colors && jest-coverage-badges --output './badges'",
